@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jenkins:
+    image: 'fernandoaml/jenkins'
+    ports:
+      - '8085:8080'
+      - '4433:8443'
+      - '50001:50000'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
